@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="style/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu_book" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=info" />
+
+
+    <!-- info link -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=info " />
+
+  <!-- new link -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=import_contacts" />
+
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+
+
+<body class="font-st">
+  <header id="header-section" class="border-b border-gray-500  z-50">
+    <!-- nav is from here -->
+
+    <div class="navbar bg-[#C6BDBD]/10 h-[96px] ">
+      <div class="flex-1 pl-[50px]">
+        <div class="flex">
+          <p class="font-bold">English</p>
+          <img class="w-[30px]" src="assets/logo.png" alt="">
+          <p class="text-[13px]">জানালা</p>
+
+        </div>
+      </div>
+      <div class="flex-none pr-[50px]">
+
+        <div role="button">
+          <div class=" flex gap-[10px] ">
+            <button id="faq-button" class="btn border border-[#422AD5]"> <img src="assets/fa-circle-question.png"
+                alt="">FAQ</button>
+            <button id="leasson-btn" class="btn border border-[#422AD5] "><img
+                src="assets/fa-book-open.png">Learn</button>
+            <button id="logOut" class="btn border border-[#422AD5]"><img
+                src="assets/fa-arrow-right-from-bracket.png">Logout</button>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </header>
+
+
+<!-- mian section -->
+  <section id="main-section" class=" pl-[50px] pr-[50px] flex justify-between ">
+    <div class="flex flex-col justify-center w-[700px]  gap-[20px]">
+      <h1 class="font-serif text-[50px]"> <span class="text-[#00BCFF]">English</span> is Esay</h1>
+      <p class="text-[24px]">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা <br> আপনার দক্ষতা বাড়াতে
+        চান, আমাদের Interactive Lessons আপনাকে নিয়ে <br>
+        যাবে অন্য একটি Level এ</p>
+      <div class="flex flex-col gap-[10px] ">
+        <input type="text" placeholder="Enter Your Name"
+          class="p-[4px] border border-gray-400 rounded-sm w-[320px] h-[40px]">
+        <div>
+
+        </div>
+        <input id="pass" type="password" placeholder="Enter Login Code(123456)"
+          class="p-[4px] border border-gray-500 rounded-sm w-[320px] h-[40px]">
+        <button id="Submit_btn"
+          class="btn  w-[115px] h-[40px] bg-colors bg-[#422AD5] text-teal-50 rounded-md hover:bg-slate-400">Get
+          Started</button>
+      </div>
+    </div>
+
+    <div id="come_here">
+      <img id="addClass" class="w-[734px] h-[732px]" src="assets/hero-student.png" alt="">
+    </div>
+  </section>
+
+
+  <section id="leasson-section" class="flex justify-center mt-[200px]">
+    <div class=" w-[1759px]  flex flex-col items-center">
+      <h1 class="text-[36px] font-serif"><span class="text-[#422AD5] ">Let's</span> Learn Vocabularies</h1>
+      <div id="lesson-level" class="flex gap-2">
+
+      </div>
+
+
+      <div id="leasson_div" class=" w-[1300px]  grid grid-cols-3 mt-[30px] rounded-[10px] mb-[30px] bg-[#F8F8F8]">
+        <div class="flex flex-col justify-center items-center w-[1300px] h-[200px]">
+          <!-- spinner -->
+          <div id="loader" class="text-center py-10 ">
+            <span class="loading loading-dots loading-xl"></span>
+          </div>
+        </div>
+        <div class="flex justify-center items-center w-[1200px] min-h-[200px] absolute ">
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+<!-- Open the modal using ID.showModal() method -->
+
+<dialog id="card_det" class="modal">
+  <div id="modal_center" class="modal-box">
+   <div id="card_det">
+
+   </div>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+  </section>
+
+
+
+
+
+
+  <!-- faq section -->
+  <section id="faq-section" class="mt-[200px]">
+    <div class="flex flex-col gap-[20px] items-center w-[100%]">
+      <h2 class="text-[36px] mb-[50px] mt-[50px] font-serif"><span class="text-[#00BCFF]">Frequently</span> Asked
+        Questions</h2>
+      <div class="collapse collapse-plus bg-base-100 border border-base-300 bg-[#F8F8F8] w-[85%]">
+        <input type="radio" name="my-accordion-3" checked="checked" />
+        <div class="collapse-title font-semibold">What is the difference between var, let, and const?</div>
+        <div class="collapse-content text-sm">
+          <ul class="list-disc pl-4">
+            <li><strong>var:</strong> Function-scoped, can be redeclared and updated, hoisted with undefined.</li>
+            <li><strong>let:</strong> Block-scoped, can be updated but not redeclared within the same scope.</li>
+            <li><strong>const:</strong> Block-scoped, cannot be updated or redeclared; must be initialized at
+              declaration.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="collapse collapse-plus bg-base-100 border border-base-300 bg-[#F8F8F8] w-[85%]">
+        <input type="radio" name="my-accordion-3" />
+        <div class="collapse-title font-semibold">What is the difference between map(), forEach(), and filter()?</div>
+        <div class="collapse-content text-sm">
+          <ul class="list-disc pl-4">
+            <li><strong>map():</strong> Returns a new array with modified elements based on the callback function.</li>
+            <li><strong>forEach():</strong> Executes a function on each element but does not return a new array.</li>
+            <li><strong>filter():</strong> Returns a new array containing elements that satisfy a given condition.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="collapse collapse-plus bg-base-100 border border-base-300 bg-[#F8F8F8] w-[85%]">
+        <input type="radio" name="my-accordion-3" />
+        <div class="collapse-title font-semibold">What are arrow functions and how are they different from regular
+          functions?</div>
+        <div class="collapse-content text-sm">
+          <p>Arrow functions are a shorthand way to write functions in JavaScript using the <code>=></code> syntax.
+            Differences include:</p>
+          <ul class="list-disc pl-4">
+            <li>They do not have their own <code>this</code> value, instead inheriting from their enclosing scope.</li>
+            <li>Cannot be used as constructors (no <code>new</code> keyword).</li>
+            <li>Implicit return when using a single expression without curly braces.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="collapse collapse-plus bg-base-100 border border-base-300 bg-[#F8F8F8] w-[85%]">
+        <input type="radio" name="my-accordion-3" />
+        <div class="collapse-title font-semibold">How do JavaScript Promises work?</div>
+        <div class="collapse-content text-sm">
+          <p>Promises are used to handle asynchronous operations in JavaScript. A Promise can be in one of three states:
+          </p>
+          <ul class="list-disc pl-4">
+            <li><strong>Pending:</strong> Initial state, neither resolved nor rejected.</li>
+            <li><strong>Fulfilled:</strong> The operation completed successfully.</li>
+            <li><strong>Rejected:</strong> The operation failed.</li>
+          </ul>
+          <p>They use <code>.then()</code> for handling success and <code>.catch()</code> for handling errors.</p>
+        </div>
+      </div>
+
+      <div class="collapse collapse-plus bg-base-100 border border-base-300 bg-[#F8F8F8] w-[85%]">
+        <input type="radio" name="my-accordion-3" />
+        <div class="collapse-title font-semibold">How do closures work in JavaScript?</div>
+        <div class="collapse-content text-sm">
+          <p>A closure is a function that remembers the scope in which it was created, even after the outer function has
+            finished execution.</p>
+          <p>Example:</p>
+          <pre class="bg-gray-100 p-2 rounded"><code>function outerFunction() {
+            let count = 0;
+            return function innerFunction() {
+                count++;
+                console.log(count);
+            };
+        }
+
+        const increment = outerFunction();
+        increment(); // 1
+        increment(); // 2</code></pre>
+          <p>Here, <code>innerFunction</code> retains access to <code>count</code> even after <code>outerFunction</code>
+            has executed.</p>
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </section>
+
+
+
+  <footer id="footer"
+    class="top-border flex justify-between items-center pl-[20px] pr-[20px] w-[100%] h-[325px] mt-[200px]">
+
+    <div id="left_class">
+      <div class="flex">
+        <p class="font-bold">English</p>
+        <img class="w-[30px]" src="assets/logo.png" alt="">
+        <p class="text-[13px]">জানালা</p>
+      </div>
+      <p class="text-[20px]">ইংরেজি শিখুন সহজে</p>
+      <p class="text-[16px]">Providing ED-Tech Applications since 2025</p>
+    </div>
+
+
+    <div id="right_div">
+      <p class="text-[14px]">Follow us</p>
+      <div class="flex gap-2">
+        <img src="assets/fb-thumb.png" alt="">
+        <img src="assets/github-thumb.png" alt="">
+        <img src="assets/instagram-thumb.png" alt="">
+
+      </div>
+    </div>
+
+    <div id="customAlert" class="alert-modal">
+      <div class="alert-content">
+          <span id="alert-close-btn" class="close-btn">&times;</span>
+          <p id="alert-message">Login Successful!</p>
+      </div>
+  </div>
+
+
+  </footer>
+
+
+
+</body>
+<script src="js/leasson.js"></script>
+<script src="js/cardLoad.js"></script>
+<!-- <script src="js/pinCheak.js" ></script> -->
+<script src="js/chatagoraise.js"></script>
+<script src="js/scroller.js"></script>
+<script src="js/loadVideoDet.js" ></script>
+<script src="js/logout.js" ></script>
+</html>
