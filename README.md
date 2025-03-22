@@ -1,6 +1,6 @@
 # Create a README.md file with the provided content
 
-readme_content = """# English Janala - Lesson Learning Website
+## English Janala - Lesson Learning Website
 
 English Janala is an interactive lesson-learning platform designed to help users improve their English language skills. The website offers structured lessons, quizzes, and exercises to enhance vocabulary, grammar, and communication abilities.
 
