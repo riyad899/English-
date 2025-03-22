@@ -2,6 +2,12 @@
 
 English Janala is an interactive lesson-learning platform designed to help users improve their English language skills. The website offers structured lessons, quizzes, and exercises to enhance vocabulary, grammar, and communication abilities.
 
+# English Janala - Live link Website
+   ```bash
+   live:https://riyad899.github.io/English-Janala/
+   ```
+
+
 ## Features
 - **Structured Lessons**: Learn English step by step with well-organized courses.
 - **Interactive Quizzes**: Test your knowledge with engaging quizzes.
